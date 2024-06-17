@@ -1,0 +1,10 @@
+<ul>
+    <li>
+        <p>First name: {{ author.first_name }}</p>
+        <p>Last name: {{ author.last_name }}</p>
+        <p>Date of birth: {{ author.birth_date }}</p>
+    </li>
+</ul>
+
+<button><a href="{% url 'author_update' author.pk %}">Update</a></button>
+<button><a href="{% url 'author_delete' author.pk %}">Delete</a></button>
